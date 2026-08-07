@@ -1,16 +1,111 @@
-# React + Vite
+# Toy Store - Cart & Checkout Microfrontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This project is the Cart & Checkout microfrontend for the Toy Store application.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+It was developed as an independent frontend component using React and Material UI.
 
-## React Compiler
+## My Responsibility
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+My responsibility in the Toy Store project is the Cart & Checkout flow.
 
-## Expanding the ESLint configuration
+The microfrontend includes:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Product display
+- Add to Cart
+- Shopping Cart
+- Product quantity management
+- Total price calculation
+- Shipping information
+- Mock payment
+- Order confirmation
+
+## Pages
+
+### Shopping Cart
+Users can view products, add products to the cart, and see the total price.
+
+### Shipping
+Users enter their shipping information including:
+
+- Full Name
+- Phone Number
+- Address
+- City
+
+### Payment
+A mock payment page that collects:
+
+- Card Holder
+- Card Number
+- Expiry Date
+- CVV
+
+No real payment transaction is performed.
+
+### Order Confirmation
+After completing the payment step, the user is redirected to an order confirmation page.
+
+## Technologies Used
+
+- React
+- Vite
+- Material UI (MUI)
+- React Router
+- JavaScript
+- HTML
+- CSS
+
+## Routes
+
+| Route | Description |
+|---|---|
+| `/` | Products and Shopping Cart |
+| `/shipping` | Shipping Information |
+| `/payment` | Mock Payment |
+| `/confirmation` | Order Confirmation |
+
+## Installation
+
+Clone the repository:
+
+git clone https://github.com/Moayed-Nasser/toy-store-cart.git
+
+Move into the project directory:
+
+cd toy-store-cart
+
+Install dependencies:
+
+npm install
+
+Run the development server:
+
+npm run dev
+
+## Live Demo
+
+Vercel Deployment:
+
+PASTE_YOUR_VERCEL_LINK_HERE
+
+## Repository
+
+GitHub:
+
+https://github.com/Moayed-Nasser/toy-store-cart
+
+## Project Architecture
+
+This microfrontend is independently developed and deployed as part of the Toy Store Microfrontends project.
+
+The Cart & Checkout microfrontend is responsible for the checkout flow:
+
+Products → Cart → Shipping → Payment → Order Confirmation
+
+## Author
+
+Moayed Nasser
+
+Cart & Checkout Microfrontend
